@@ -37,4 +37,15 @@ public class TriangleTest {
     public void outOfRange(Triangle triangle, boolean expected) {
         Assert.assertEquals(triangle.outOfRange(), expected);
     }
+
+    @DataProvider(name = "Equilateral")
+    public Object[][] _Equilateral() {
+        return new Object[][]{{new Triangle(7, 7, 7), true},
+                {new Triangle(11, 11, 11), true}};
+    }
+
+    @Test(dataProvider = "Equilateral")
+    public void isEquilateral(Triangle triangle, boolean expected) {
+        Assert.assertEquals(triangle.isEquilateral(), expected);
+    }
 }
