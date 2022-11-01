@@ -52,4 +52,23 @@ public class Triangle {
         } else
             return false;
     }
+
+    public boolean isIsosceles() {
+        if (A == B || B == C || A == C) {
+            return true;
+        } else
+            return false;
+    }
+
+    public void triangleType() {
+        if(notNullLength() && isTriangle() && outOfRange()) {
+            if(isEquilateral()) {
+                System.out.println("This triangle is equilateral");
+            } else if (isIsosceles()) {
+                System.out.println("This triangle is isosceles");
+            } else
+                System.out.println("This triangle has different sides");
+        } else
+            System.out.println("Not a triangle!");
+    }
 }
