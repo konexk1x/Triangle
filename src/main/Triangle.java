@@ -7,17 +7,18 @@ public class Triangle {
     private Scanner scanner;
 
     public Triangle() {
-        scanner = new Scanner(System.in);
-        System.out.println("Please, enter the sides of triangle: ");
-        System.out.println("Side A: ");
-            if (scanner.hasNextByte()) {
-                this.A = scanner.nextByte();
-                System.out.println("Side B: ");
-                this.B = scanner.nextByte();
-                System.out.println("Side C: ");
-                this.C = scanner.nextByte();
-            } else
-                System.out.println("Not a number. Please, enter correct value");
+        try {
+            scanner = new Scanner(System.in);
+            System.out.println("Please, enter the sides of triangle: ");
+            System.out.println("Side A: ");
+            this.A = scanner.nextByte();
+            System.out.println("Side B: ");
+            this.B = scanner.nextByte();
+            System.out.println("Side C: ");
+            this.C = scanner.nextByte();
+        } catch (Exception e) {
+            System.err.println("Not a number. Please, enter correct value");
+        }
     }
 
     public boolean notNullLength() {
