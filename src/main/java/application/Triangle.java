@@ -44,11 +44,11 @@ public class Triangle {
     }
 
     public boolean outOfRange() {
-        if (A > Byte.MAX_VALUE || B > Byte.MAX_VALUE || C > Byte.MAX_VALUE) {
+        if (A > 100 || B > 100 || C > 100) {
             System.out.println("Out of range. Please, enter the value from 1 to 127");
             return false;
         } else
-            return true;
+        return true;
     }
 
     public boolean isEquilateral() {
