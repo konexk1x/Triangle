@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="apache-maven-3.8">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../Program Files/Java/apache-maven-3.8.5" recursive="false" type="SOURCES" />
+  </library>
+</component>

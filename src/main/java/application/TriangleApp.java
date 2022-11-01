@@ -1,4 +1,4 @@
-package main;
+package main.java.application;
 
 public class TriangleApp {
     public static void main (String [] args) {
