@@ -68,6 +68,6 @@ public class Triangle {
             } else
                 System.out.println("This triangle has different sides");
         } else
-            System.out.println("Not a triangle!");
+            System.err.println("Not a triangle!");
     }
 }
