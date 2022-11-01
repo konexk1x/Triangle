@@ -8,10 +8,9 @@ public class Triangle {
 
     public Triangle() {
         scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
+        System.out.println("Please, enter the sides of triangle: ");
+        System.out.println("Side A: ");
             if (scanner.hasNextByte()) {
-                System.out.println("Please, enter the sides of triangle: ");
-                System.out.println("Side A: ");
                 this.A = scanner.nextByte();
                 System.out.println("Side B: ");
                 this.B = scanner.nextByte();
@@ -19,7 +18,6 @@ public class Triangle {
                 this.C = scanner.nextByte();
             } else
                 System.out.println("Not a number. Please, enter correct value");
-        }
     }
 
     public boolean notNullLength() {
@@ -61,8 +59,8 @@ public class Triangle {
     }
 
     public void triangleType() {
-        if(notNullLength() && isTriangle() && outOfRange()) {
-            if(isEquilateral()) {
+        if (notNullLength() && isTriangle() && outOfRange()) {
+            if (isEquilateral()) {
                 System.out.println("This triangle is equilateral");
             } else if (isIsosceles()) {
                 System.out.println("This triangle is isosceles");
