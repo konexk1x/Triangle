@@ -23,7 +23,7 @@ public class Triangle {
             System.out.println("Side C: ");
             this.C = scanner.nextInt();
         } catch (Exception e) {
-            System.err.println("Not a number. Please, enter correct value");
+            System.err.println("Not an integer. Please, enter correct value");
         }
     }
 

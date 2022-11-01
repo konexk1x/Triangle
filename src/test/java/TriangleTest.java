@@ -26,4 +26,10 @@ public class TriangleTest {
     public void isTriangle(Triangle triangle, boolean expected) {
         Assert.assertEquals(triangle.isTriangle(), expected);
     }
+
+    @DataProvider(name = "outOfRangeValue")
+    public Object[][] _outOfRangeValue() {
+        return new Object[][]{{new Triangle(101, 2, 4), false},
+                {new Triangle(7, 101, 8), false}};
+    }
 }
