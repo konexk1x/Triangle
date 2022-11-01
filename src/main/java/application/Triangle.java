@@ -3,19 +3,25 @@ package application;
 import java.util.Scanner;
 
 public class Triangle {
-    private byte A, B, C;
+    private int A, B, C;
     private Scanner scanner;
+
+    public Triangle(int a, int b, int c) {
+        A = a;
+        B = b;
+        C = c;
+    }
 
     public Triangle() {
         try {
             scanner = new Scanner(System.in);
             System.out.println("Please, enter the sides of triangle: ");
             System.out.println("Side A: ");
-            this.A = scanner.nextByte();
+            this.A = scanner.nextInt();
             System.out.println("Side B: ");
-            this.B = scanner.nextByte();
+            this.B = scanner.nextInt();
             System.out.println("Side C: ");
-            this.C = scanner.nextByte();
+            this.C = scanner.nextInt();
         } catch (Exception e) {
             System.err.println("Not a number. Please, enter correct value");
         }
